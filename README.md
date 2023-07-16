@@ -1,2 +1,0 @@
-# Ecommerce
-buy and sell 
