@@ -5,7 +5,7 @@ import Header from './components/Header';
 const App = () => {
 
   return (
-    <div className="h-full">
+    <div className="">
 
       <div className="flex-1 h-fit pb-40">
         <Header />
