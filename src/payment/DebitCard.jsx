@@ -4,7 +4,7 @@ import { ProductContext } from '../context/ProductContext'
 function DebitCard() {
     const [product,setProduct] = useContext(ProductContext)
   return (
-    <main className='overflow-y-scroll h-screen '>
+    <main className='overflow-y-scroll h-full '>
 
     <div className='overflow-y-scroll h-full mb-14'>
       <select className='mb-10 mx-5 rounded-md px-1 py-2 my-5'>
