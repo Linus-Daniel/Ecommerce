@@ -17,7 +17,7 @@ const App = () => {
         </Routes>
       </div>
 
-      <div className='RouteHolders flex w-screen bg-black rounded-t-md justify-around text-slate-400 shadow-lg h-14  items-center absolute bottom-0'>
+      <div className='RouteHolders flex w-screen bg-black rounded-t-md justify-around text-slate-400 shadow-lg h-14  items-center sticky bottom-0'>
         {
           RouteTrigger.map((trigger) => {
             return (
