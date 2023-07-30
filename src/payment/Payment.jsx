@@ -12,7 +12,7 @@ function Payment() {
   }
   return (
     <div>
-      <select name='Payment methods' className=' mx-[20px] w-[80%] text-sm p-2' onClick={(event)=>setPaymentMethod(event.target.value)}>
+      <select name='Payment methods' className=' mx-[20px] w-[80%] text-sm p-2' onChange={(event)=>setPaymentMethod(event.target.value)}>
         <option className='text-gray-400 shadow-md'>Payment Methods</option>
         <option className='text-red-300'>Local Bank transfer</option>
         <option>Crypto</option>

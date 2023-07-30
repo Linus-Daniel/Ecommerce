@@ -19,7 +19,7 @@ function LocalBank() {
         <div className='mx-5 mt-10'>
 
             <section>
-                <select  className='px-2 py-3 rounded-md mb-8' onClick={(event) => { setBank(event.target.value) }}>
+                <select  className='px-2 py-3 rounded-md mb-8' onChange={(event) => { setBank(event.target.value) }}>
                 {
                     Banks.map((bank)=>{
                         return(
