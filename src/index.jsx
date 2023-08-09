@@ -7,18 +7,22 @@ import App from './App';
 import { ProductProvider } from './context/ProductContext';
 import { CartProvider } from './context/CartContext';
 import { WishlistProvider } from './context/WishlistContext';
+import { AsideNavigationProvider } from './context/AsideNavigationContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ProductProvider>
       <CartProvider>
         <WishlistProvider>
+          <AsideNavigationProvider>
 
 
 
-        <Router>
-          <App />
-        </Router>
+
+            <Router>
+              <App />
+            </Router>
+          </AsideNavigationProvider>
         </WishlistProvider>
       </CartProvider>
     </ProductProvider>

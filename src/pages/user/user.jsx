@@ -1,15 +1,19 @@
 import React, { useState } from "react";
-import { Logo } from "../../components/Header";
-import { FaChevronRight, FaShoppingBag, FaUser } from "react-icons/fa";
+import { FaArrowLeft, FaChevronRight, FaShoppingBag, FaUser } from "react-icons/fa";
 import { HiArrowLeft } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 function User() {
   const [signup, setSignup] = useState(false);
   const [login, setLogin] = useState(false);
+  const router  = useNavigate()
   return (
 <div>
-      <div className="px-4 py-2 text-xs mb-24">
-        <section className="mb-10 mt-2 flex items-center">
+      <div className="px-4 text-xs mb-24 py-10">
+        <button onClick={()=> router(-1)} className='absolute left-[2%] bg-slate-100 text-slate-500 shadow-lg text-xl px-3 py-2'>
+          <FaArrowLeft />
+        </button>
+        <section className="mb-10 mt-10 flex items-center">
           <div className="h-32 w-32 text-7xl justify-center items-center flex text-gray-600 bg-slate-300 rounded-full">
             <FaUser />
           </div>

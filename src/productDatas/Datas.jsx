@@ -1083,6 +1083,4 @@ export const cartProducts = [
     },
   },
 ];
-
-console.log(img1)
 export const ProductContextValue = [];

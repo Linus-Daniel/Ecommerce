@@ -2,13 +2,13 @@
 import { IoMdCart, } from "react-icons/io"
 import { HiOutlineHeart, HiOutlineHome, HiOutlineUser, HiSearch,  } from "react-icons/hi"
 import Search from "../pages/search/search"
-import App from "../App"
 import Cart from "../pages/cart/cart"
 import Wishlist from "../pages/wishlist/wishlist"
 import User from "../pages/user/user"
 import First from "../pages/main/first"
 import ProductView from "../pages/productview/ProductView"
 import Payment from "../payment/Payment"
+import Categories from "../categories/Categories"
 
 
 
@@ -78,7 +78,18 @@ export const pages = [
         element:<Payment />
  
 
+    },
+    {
+        path:"/",
+        element:<First />
+    
+    },
+    {
+        path:"/categories/:id",
+        element:<Categories />
+    
     }
+
 
 ]
 
